@@ -1,1 +1,1 @@
-(ZnServer startDefaultOn: 8080) onRequestRespond: [ :request |	|model result|		model := MathModel build: request.	result := MathOperation plus: model.		ZnResponse ok: (ZnEntity text: result printString) ].
+(ZnServer startDefaultOn: 8080) onRequestRespond: [ :request |	|model result|		model := StringModel build: request.		ZnResponse ok: (ZnEntity text: model data) ].
