@@ -1,0 +1,167 @@
+[31mRPackageConflictError: Package/Tag can not be added because it conflicts with package WebApplication-Controllers tag nil
+[0mRPackageOrganizer>>validateCanBeAddedPackageName:tagName:
+RPackageOrganizer>>validateCanBeAddedPackage:tagName:
+[ 
+			self class organizer 
+				validateCanBeAddedPackage: self
+				tagName: tagName.
+			newTag := self basicAddClassTag: tagName.
+			SystemAnnouncer uniqueInstance classTagAdded: tagName inPackage: self.
+			^newTag] in RPackage>>addClassTag: in Block: [ ...
+Set(Collection)>>detect:ifFound:ifNone:
+Set(Collection)>>detect:ifNone:
+RPackage>>classTagNamed:ifAbsent:
+RPackage>>addClassTag:
+SycAddNewClassTagCommand>>execute
+ClyFullBrowserPackageContext(ClySystemBrowserContext)>>executeCommand:by:
+[self prepareCommandForExecution.
+	context executeCommand: command by: self.
+	self applyCommandResult] in CmdCommandActivator>>executeCommand in Block: [self prepareCommandForExecution....
+FullBlockClosure(BlockClosure)>>on:do:
+CmdCommandActivator>>executeCommand
+[ | selArgCount |  "show cursor in case item opens a new MVC window"
+		(selArgCount := selector numArgs) = 0
+			ifTrue:
+				[target perform: selector]
+			ifFalse:
+				[selArgCount = arguments size
+					ifTrue: [target perform: selector withArguments: arguments]
+					ifFalse: [target perform: selector withArguments: (arguments copyWith: evt)]].
+		self showShortcut.
+		self changed] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent: in Block: [ | selArgCount |  "show cursor in case item opens...etc...
+FullBlockClosure(BlockClosure)>>ensure:
+CursorWithMask(Cursor)>>showWhile:
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ToggleMenuItemMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with: in Block: [ ^ anEvent sentTo: self ]
+FullBlockClosure(BlockClosure)>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+[0m[31mRPackageConflictError: Package/Tag can not be added because it conflicts with package WebApplication-Controllers tag nil
+[0mRPackageOrganizer>>validateCanBeAddedPackageName:tagName:
+RPackageOrganizer>>validateCanBeAddedPackage:tagName:
+[ 
+			self class organizer 
+				validateCanBeAddedPackage: self
+				tagName: tagName.
+			newTag := self basicAddClassTag: tagName.
+			SystemAnnouncer uniqueInstance classTagAdded: tagName inPackage: self.
+			^newTag] in RPackage>>addClassTag: in Block: [ ...
+Set(Collection)>>detect:ifFound:ifNone:
+Set(Collection)>>detect:ifNone:
+RPackage>>classTagNamed:ifAbsent:
+RPackage>>addClassTag:
+SycAddNewClassTagCommand>>execute
+ClyFullBrowserPackageContext(ClySystemBrowserContext)>>executeCommand:by:
+[self prepareCommandForExecution.
+	context executeCommand: command by: self.
+	self applyCommandResult] in CmdCommandActivator>>executeCommand in Block: [self prepareCommandForExecution....
+FullBlockClosure(BlockClosure)>>on:do:
+CmdCommandActivator>>executeCommand
+[ | selArgCount |  "show cursor in case item opens a new MVC window"
+		(selArgCount := selector numArgs) = 0
+			ifTrue:
+				[target perform: selector]
+			ifFalse:
+				[selArgCount = arguments size
+					ifTrue: [target perform: selector withArguments: arguments]
+					ifFalse: [target perform: selector withArguments: (arguments copyWith: evt)]].
+		self showShortcut.
+		self changed] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent: in Block: [ | selArgCount |  "show cursor in case item opens...etc...
+FullBlockClosure(BlockClosure)>>ensure:
+CursorWithMask(Cursor)>>showWhile:
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ToggleMenuItemMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with: in Block: [ ^ anEvent sentTo: self ]
+FullBlockClosure(BlockClosure)>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+[0m[31mNotFound: a ClyNotebookPageMorph(549581824) not found in SortedCollection
+[0mSortedCollection(Collection)>>errorNotFound:
+[self errorNotFound: oldObject] in SortedCollection(Collection)>>remove: in Block: [self errorNotFound: oldObject]
+SortedCollection(OrderedCollection)>>remove:ifAbsent:
+SortedCollection(Collection)>>remove:
+[ 
+		self pages remove: aPage.
+		self tabSelectorMorph removeTabIndex: removedPageIndex ] in ClyNotebookMorph(SpNotebookMorph)>>removePage: in Block: [ ...
+ClyNotebookMorph(SpNotebookMorph)>>suspendAnnouncementsDuring:
+ClyNotebookMorph(SpNotebookMorph)>>removePage:
+ClyNotebookManager>>closeTab:
+[ self closeTab: tab ] in ClyNotebookManager>>addTool: in Block: [ self closeTab: tab ]
+FullBlockClosure(BlockClosure)>>cull:
+ClyNotebookPageHeaderPresenter>>doClose
+[ :anEvent | 
+			anEvent isPrimaryButton 
+				ifTrue: [ self doClose ] ] in ClyNotebookPageHeaderPresenter>>initializePresenters in Block: [ :anEvent | ...
+MorphEventSubscription>>notify:from:
+[ :s | result := result | ((s notify: anEvent from: sourceMorph) == true) ] in MorphicEventHandler>>notifyMorphsOfEvent:ofType:from: in Block: [ :s | result := result | ((s notify: anEvent from...etc...
+Set>>do:
+MorphicEventHandler>>notifyMorphsOfEvent:ofType:from:
+MorphicEventHandler>>mouseDown:fromMorph:
+AlphaImageMorph(Morph)>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+AlphaImageMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with: in Block: [ ^ anEvent sentTo: self ]
+FullBlockClosure(BlockClosure)>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+AlphaImageMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[0m[31mNotFound: a ClyNotebookPageMorph(549581824) not found in SortedCollection
+[0mSortedCollection(Collection)>>errorNotFound:
+[self errorNotFound: oldObject] in SortedCollection(Collection)>>remove: in Block: [self errorNotFound: oldObject]
+SortedCollection(OrderedCollection)>>remove:ifAbsent:
+SortedCollection(Collection)>>remove:
+[ 
+		self pages remove: aPage.
+		self tabSelectorMorph removeTabIndex: removedPageIndex ] in ClyNotebookMorph(SpNotebookMorph)>>removePage: in Block: [ ...
+ClyNotebookMorph(SpNotebookMorph)>>suspendAnnouncementsDuring:
+ClyNotebookMorph(SpNotebookMorph)>>removePage:
+ClyNotebookManager>>closeTab:
+[ self closeTab: tab ] in ClyNotebookManager>>addTool: in Block: [ self closeTab: tab ]
+FullBlockClosure(BlockClosure)>>cull:
+ClyNotebookPageHeaderPresenter>>doClose
+[ :anEvent | 
+			anEvent isPrimaryButton 
+				ifTrue: [ self doClose ] ] in ClyNotebookPageHeaderPresenter>>initializePresenters in Block: [ :anEvent | ...
+MorphEventSubscription>>notify:from:
+[ :s | result := result | ((s notify: anEvent from: sourceMorph) == true) ] in MorphicEventHandler>>notifyMorphsOfEvent:ofType:from: in Block: [ :s | result := result | ((s notify: anEvent from...etc...
+Set>>do:
+MorphicEventHandler>>notifyMorphsOfEvent:ofType:from:
+MorphicEventHandler>>mouseDown:fromMorph:
+AlphaImageMorph(Morph)>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+AlphaImageMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with: in Block: [ ^ anEvent sentTo: self ]
+FullBlockClosure(BlockClosure)>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+AlphaImageMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[0m
